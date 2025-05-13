@@ -1,17 +1,16 @@
 import React, { useEffect,useState } from 'react'
-import './App.css';
-import logo from './images/logo1.png'
-import grocery from './images/grocery-store.png'
+import '../../App.css';
+import logo from '../images/logo1.png'
+import grocery from '../images/grocery-store.png'
 import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';  
-import { addToCart } from './CartActions'; 
+import { addToCart } from '../Cart/CartActions'; 
 import { useNavigate } from 'react-router-dom';
-import star from './images/star.png'
-import kart from './images/kart-logo.png'
-import coupon from './images/points.png'
-import offer from './images/offer.png'
-import Footer from './footer';
-
+import star from '../images/star.png'
+import kart from '../images/kart-logo.png'
+import coupon from '../images/points.png'
+import offer from '../images/offer.png'
+import Footer from '../Home/footer';
 
 
 export default function Description() {

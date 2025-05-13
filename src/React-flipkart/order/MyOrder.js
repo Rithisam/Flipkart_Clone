@@ -1,7 +1,7 @@
 import React ,{useState} from 'react';
 import { useSelector } from 'react-redux';
-import logo from './images/logo1.png';
-import grocery from './images/grocery-store.png';
+import logo from '../images/logo1.png';
+import grocery from '../images/grocery-store.png';
 import { useNavigate} from 'react-router-dom';
 
 

@@ -1,9 +1,10 @@
-// Wishlist.js
+
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromWishlist } from './WishlistActions';
-import dust from './images/dustbin.png';
-import './App.css';
+import dust from '../images/dustbin.png';
+
+import '../../App.css';
 
 const WishList = () => {
   const wishlistItems = useSelector((state) => state.wishlist.items);

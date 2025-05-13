@@ -1,11 +1,18 @@
 import React , {useState}from 'react'
-import './App.css';
-import logo from './images/logo1.png'
-import grocery from './images/grocery-store.png'
-import WhishList from './WhishList';
+import '../../App.css';
+
+import logo from '../images/logo1.png';
+import grocery from '../images/grocery-store.png';
+
+
+
+
+
+
 
 import { useNavigate } from 'react-router-dom';
 import PersonalInfo from './PersonalInfo';
+import WishList from '../Wishlist/WishList';
 
 
 export default function Profile() {
@@ -17,7 +24,7 @@ export default function Profile() {
   const renderSection = () => {
     switch (activeSection) {
       case 'wishlist':
-        return <WhishList/>;
+        return <WishList/>;
       case 'personalinfo':
         return <PersonalInfo/>
       

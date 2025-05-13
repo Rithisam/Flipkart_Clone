@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './App.css';
+import '../../App.css';
+
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -12,7 +13,7 @@ const Login = () => {
 
   const handleLoginPage = () => {
     if (num.length === 10) {
-      // Navigate to home and pass login status
+     
       navigate('/', { state: { isLoggedIn: true, phone: num } });
     } else {
       alert("Enter the number correctly");

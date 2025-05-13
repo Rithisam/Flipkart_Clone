@@ -1,6 +1,6 @@
 const initialState = {
   items: [],
-  isCartEmptied: false,  // new flag to track if cart is emptied
+  isCartEmptied: false,  
 };
 
 const cartReducer = (state = initialState, action) => {
@@ -47,22 +47,22 @@ const cartReducer = (state = initialState, action) => {
               ? { ...item, quantity: item.quantity - 1 }
               : item
           )
-          .filter(item => item.quantity > 0), // remove if qty is 0
+          .filter(item => item.quantity > 0), 
       };
 
-    // New action to clear the cart
+   
     case 'CLEAR_CART':
       return {
         ...state,
-        items: [],                // empty the cart
-        isCartEmptied: true,      // set the flag to true
+        items: [],                
+        isCartEmptied: true,      
       };
 
-    // Action to reset the isCartEmptied flag when visiting cart page
+    
     case 'RESET_CART_EMPTIED':
       return {
         ...state,
-        isCartEmptied: false,     // reset the flag when returning to cart
+        isCartEmptied: false,     
       };
 
     default:

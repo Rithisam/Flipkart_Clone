@@ -1,6 +1,7 @@
 import React from "react";
-import './App.css';
-import logo from './images/logo1.png'
+import '../../App.css';
+import logo from '../images/logo1.png';
+
 import { useNavigate } from 'react-router-dom';
 
 const EmptyCart = () => {

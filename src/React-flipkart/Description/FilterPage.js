@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToWishlist, removeFromWishlist } from './WishlistActions';
-import './App.css';
-import logo from './images/logo1.png';
-import grocery from './images/grocery-store.png';
-import star from './images/star.png';
-import kart from './images/kart-logo.png';
-import heart from './images/heart.png';
-import heartFilled from './images/heart-filled.png'; // Add this image
-import Footer from './footer';
+import { addToWishlist, removeFromWishlist } from '../Wishlist/WishlistActions';
+import '../../App.css';
+import logo from '../images/logo1.png';
+import grocery from '../images/grocery-store.png';
+import star from '../images/star.png';
+import kart from '../images/kart-logo.png';
+import heart from '../images/heart.png';
+import heartFilled from '../images/heart-filled.png'; // Add this image
+import Footer from '../Home/footer';
 
 export default function FilterPage() {
   const [things, setThings] = useState([]);

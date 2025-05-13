@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import circle from './images/circle.png'
+import circle from '../images/circle.png'
 
 
 export default function OrderPlaced() {

@@ -1,13 +1,13 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { removeFromCart, incrementQuantity, decrementQuantity } from './CartActions';
+import { removeFromCart, incrementQuantity, decrementQuantity } from '../Cart/CartActions';
 import { addOrder } from './OrderAction';
-import { clearCart } from './CartActions'; 
-import EmptyCart from './EmptyCart';
-import './App.css';
-import logo from './images/logo1.png';
-import kart from './images/kart-logo.png';
+import { clearCart } from '../Cart/CartActions'; 
+import EmptyCart from '../Cart/EmptyCart';
+import '../../App.css';
+import logo from '../images/logo1.png';
+import kart from '../images/kart-logo.png';
 
 const PlaceOrder = () => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -24,7 +24,6 @@ const PlaceOrder = () => {
 
   const handlePlaceOrder = () => {
     const order = {
-      
       items: cartItems,
       total: totalPrice,
       date: new Date().toLocaleString(),

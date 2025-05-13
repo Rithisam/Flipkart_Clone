@@ -3,9 +3,17 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { removeFromCart, incrementQuantity, decrementQuantity } from './CartActions';
 import { resetCartEmptied } from './CartActions';
-import './App.css';
-import logo from './images/logo1.png'
-import kart from './images/kart-logo.png'
+import '../../App.css';
+import logo from '../images/logo1.png';
+import kart from '../images/grocery-store.png';
+
+
+
+
+
+
+
+
 import EmptyCart from './EmptyCart';
 
 

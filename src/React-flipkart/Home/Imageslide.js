@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import '../../App.css';
+
 
 const images = [
   'https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/7fc9f5a23c49764e.jpg?q=20',

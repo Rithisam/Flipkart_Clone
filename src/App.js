@@ -1,18 +1,30 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import Description from './Description';
-import Login from './Login';
-import Cart from './Cart';
-import FilterPage from './FilterPage';
-import PlaceOrder from './PlaceOrder';
-import EmptyCart from './EmptyCart';
-import Profile from './Profile';
-import OrderPlaced from './OrderPlaced';
-import MyOrder from './MyOrder';
-import WhishList from './WhishList';
-import PersonalInfo from './PersonalInfo';
-import WishList from './WhishList';
-import Wishlistcontainer from './Wishlistcontainer';
+
+
+
+import Cart from './React-flipkart/Cart/Cart';
+import EmptyCart from './React-flipkart/Cart/EmptyCart';
+import Home from './React-flipkart/Home/Home';
+
+
+
+
+import PlaceOrder from './React-flipkart/order/PlaceOrder';
+
+
+import OrderPlaced from './React-flipkart/order/OrderPlaced';
+import MyOrder from './React-flipkart/order/MyOrder';
+
+import PersonalInfo from './React-flipkart/Home/PersonalInfo';
+
+
+
+import Wishlistcontainer from './React-flipkart/Wishlist/Wishlistcontainer';
+
+import Login from './React-flipkart/Home/Login';
+import Profile from './React-flipkart/Home/Profile';
+import Description from './React-flipkart/Description/Description';
+import FilterPage from './React-flipkart/Description/FilterPage';
 
 
 
@@ -31,9 +43,9 @@ function App() {
         <Route path="/profile" element={<Profile/>} />
         <Route path="/place" element={<OrderPlaced/>} />
         <Route path="/myorder" element={<MyOrder/>} />
-        <Route path="/list" element={<WhishList/>} />
+      
         <Route path="/info" element={<PersonalInfo/>} />
-        <Route path="/wish" element={<WishList/>} />
+        
         <Route path="/wishlist" element={<Wishlistcontainer/>} />
 
 
