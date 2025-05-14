@@ -1,22 +1,14 @@
 import React , {useState}from 'react'
 import '../../App.css';
-
 import logo from '../images/logo1.png';
 import grocery from '../images/grocery-store.png';
-
-
-
-
-
-
-
 import { useNavigate } from 'react-router-dom';
 import PersonalInfo from './PersonalInfo';
 import WishList from '../Wishlist/WishList';
 
 
 export default function Profile() {
-  const [activeSection, setActiveSection] = useState('personalinfo'); // default section
+  const [activeSection, setActiveSection] = useState('personalinfo'); 
   const navigate = useNavigate();
 
   

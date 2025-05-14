@@ -6,18 +6,7 @@ import { resetCartEmptied } from './CartActions';
 import '../../App.css';
 import logo from '../images/logo1.png';
 import kart from '../images/grocery-store.png';
-
-
-
-
-
-
-
-
 import EmptyCart from './EmptyCart';
-
-
-
 
 
 const Cart = () => {
@@ -25,14 +14,8 @@ const Cart = () => {
   const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
   const isCartEmptied = useSelector((state) => state.cart.isCartEmptied);
-
-
-
-
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-
 
   useEffect(() => {
     dispatch(resetCartEmptied());
